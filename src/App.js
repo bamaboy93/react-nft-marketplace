@@ -5,6 +5,7 @@ import Layout from "./views/Layout";
 const HomeView = lazy(() => import("./views/Home"));
 const MarketplaceView = lazy(() => import("./views/Marketplace"));
 const RankingsView = lazy(() => import("./views/Rankings"));
+const RegisterView = lazy(() => import("./views/Register"));
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/marketplace" element={<MarketplaceView />} />
           <Route path="/rankings" element={<RankingsView />} />
         </Route>
+        <Route path="/register" element={<RegisterView />} />
       </Routes>
     </Suspense>
   );
