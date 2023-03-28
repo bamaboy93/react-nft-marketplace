@@ -1,6 +1,6 @@
 import Section from "../Section";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import { Image, Item, ItemDesc, ItemTitle, List } from "./Tutorial.styled";
+import { Item, ItemDesc, ItemTitle, List } from "./Tutorial.styled";
 import wallet from "../../styles/images/wallet.png";
 import folder from "../../styles/images/collection.png";
 import cart from "../../styles/images/cart.png";
@@ -14,7 +14,7 @@ const Tutorial = () => {
       ></SectionTitle>
       <List>
         <Item>
-          <Image src={wallet} alt="wallet" />
+          <img src={wallet} alt="wallet" width="250" heigth="250" />
           <ItemTitle>Setup Your wallet</ItemTitle>
           <ItemDesc>
             Set up your wallet of choice. Connect it to the Animarket by
@@ -22,7 +22,7 @@ const Tutorial = () => {
           </ItemDesc>
         </Item>
         <Item>
-          <Image src={folder} alt="collection folder" />
+          <img src={folder} alt="collection folder" width="250" heigth="250" />
           <ItemTitle>Create Collection</ItemTitle>
           <ItemDesc>
             Upload your work and setup your collection. Add a description,
@@ -30,7 +30,7 @@ const Tutorial = () => {
           </ItemDesc>
         </Item>
         <Item>
-          <Image src={cart} alt="cart" />
+          <img src={cart} alt="cart" width="250" heigth="250" />
           <ItemTitle>Start Earning</ItemTitle>
           <ItemDesc>
             Choose between auctions and fixed-price listings. Start earning by

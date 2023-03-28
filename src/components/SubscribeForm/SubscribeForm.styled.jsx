@@ -6,7 +6,7 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: calc(100% - 20px);
   outline: none;
   border: none;
   border-radius: 20px;
@@ -22,9 +22,6 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  position: absolute;
-  top: 0;
-  right: -20px;
   display: flex;
   align-items: center;
   padding: 20px 30px;
@@ -37,6 +34,19 @@ export const Button = styled.button`
   font-weight: ${(props) => props.theme.fontWeights.bold};
   font-size: ${(props) => props.theme.fontSizes.s};
   transition: transform 250ms ease;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+    margin-top: ${(props) => props.theme.space[4]}px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   :hover {
     transform: scale(0.95);
     transform-origin: center;

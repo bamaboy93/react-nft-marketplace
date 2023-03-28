@@ -6,6 +6,7 @@ const HomeView = lazy(() => import("./views/Home"));
 const MarketplaceView = lazy(() => import("./views/Marketplace"));
 const RankingsView = lazy(() => import("./views/Rankings"));
 const RegisterView = lazy(() => import("./views/Register"));
+const LoginView = lazy(() => import("./views/Login"));
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/rankings" element={<RankingsView />} />
         </Route>
         <Route path="/register" element={<RegisterView />} />
+        <Route path="/login" element={<LoginView />} />
       </Routes>
     </Suspense>
   );

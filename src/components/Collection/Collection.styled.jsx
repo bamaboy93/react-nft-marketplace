@@ -2,19 +2,28 @@ import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
 export const CollectionWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-row-gap: 40px;
+  @media (min-width: ${(props) => props.theme.breakpoints.sm}) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+  }
 `;
 
 export const Instance = styled.div``;
 
 export const Image = styled.img`
+  width: 100%;
   display: block;
   border-radius: 20px;
-  transition: scale 250ms ease-out;
+  transition: transform 250ms ease-out;
 
   :hover {
-    scale: 0.95;
+    transform: scale(0.95);
   }
 `;
 
@@ -22,17 +31,26 @@ export const List = styled.ul`
   margin-top: ${(props) => props.theme.space[2]}px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const Item = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 20px;
   background-color: ${(props) => props.theme.colors.accent};
   font-weight: ${(props) => props.theme.fontWeights.bold};
   font-size: ${(props) => props.theme.fontSizes.s};
+
+  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const CollectionName = styled(Typography)(({ theme }) => ({

@@ -1,15 +1,15 @@
 import { Paper, Grid, ThemeProvider } from "@mui/material";
-import RegisterForm from "../../components/Form/RegisterForm";
+import LoginForm from "../../components/Form/LoginForm";
 import {
   Desc,
   FormWrapper,
   Main,
   PlaceholderGrid,
   Title,
-} from "./Register.styled";
+} from "./Login.styled";
 import { muiTheme } from "../../styles/muiTheme";
 
-export default function Register() {
+export default function Login() {
   return (
     <ThemeProvider theme={muiTheme}>
       <Main container component="main">
@@ -25,12 +25,12 @@ export default function Register() {
           square
         >
           <FormWrapper>
-            <Title component="h1">Create account</Title>
+            <Title component="h1">Log In</Title>
             <Desc component="p">
-              Welcome! enter your details and start creating, collecting and
+              Welcome! Enter your credentials and start creating, collecting and
               selling NFTs.
             </Desc>
-            <RegisterForm />
+            <LoginForm />
           </FormWrapper>
         </Grid>
       </Main>

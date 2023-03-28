@@ -1,13 +1,12 @@
-import { Box, Typography } from "@mui/material";
-import { Title, Wrapper } from "./SectionTitle.styled";
+import { Desc, Title, Wrapper } from "./SectionTitle.styled";
 
 const SectionTitle = ({ title, text, children }) => {
   return (
     <Wrapper>
-      <Box>
-        <Title variant="h3">{title}</Title>
-        <Typography variant="h5">{text}</Typography>
-      </Box>
+      <div>
+        <Title>{title}</Title>
+        <Desc>{text}</Desc>
+      </div>
       {children}
     </Wrapper>
   );

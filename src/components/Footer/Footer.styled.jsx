@@ -3,22 +3,29 @@ import { NavLink } from "react-router-dom";
 
 export const FooterWrapper = styled.footer`
   padding: 40px 0;
+
   background-color: ${(props) => props.theme.colors.background.light};
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
   margin-bottom: ${(props) => props.theme.space[10]}px;
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const Info = styled.div`
-  width: 250px;
+  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+    margin-bottom: ${(props) => props.theme.space[6]}px;
+  }
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+    width: 250px;
+  }
 `;
 
 export const Logo = styled.a`
   display: flex;
-  justify-content: center;
   align-items: center;
 
   svg {
@@ -67,7 +74,11 @@ export const SocialLink = styled.a`
   }
 `;
 
-export const Explore = styled.div``;
+export const Explore = styled.div`
+  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+    margin-bottom: ${(props) => props.theme.space[6]}px;
+  }
+`;
 
 export const Title = styled.h2`
   margin-bottom: ${(props) => props.theme.space[6]}px;
@@ -94,7 +105,10 @@ export const Link = styled(NavLink)`
 `;
 
 export const Sub = styled.div`
-  width: 430px;
+  width: 100%;
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+    width: 430px;
+  }
 `;
 
 export const Total = styled.div`

@@ -1,7 +1,7 @@
 import { Button, Text } from "./ButtonSecondary.styled";
-const ButtonSecondary = ({ text, icon }) => {
+const ButtonSecondary = ({ text, icon, width }) => {
   return (
-    <Button>
+    <Button width={width}>
       {icon}
       <Text>{text}</Text>
     </Button>

@@ -22,17 +22,12 @@ const Collection = () => {
       <CollectionWrapper>
         {collection.map(({ author, images, mainImage, name }) => (
           <Instance key={author.name}>
-            <Image src={mainImage} alt="artwork" width="330" heigth="330" />
+            <Image src={mainImage} alt="artwork" />
             <List>
               {images.map((image) => (
-                <li key={image.url}>
-                  <Image
-                    src={image.url}
-                    alt="artwork"
-                    width="100"
-                    heigth="100"
-                  />
-                </li>
+                <Item key={image.url}>
+                  <Image src={image.url} alt="artwork" />
+                </Item>
               ))}
               <Item>...</Item>
             </List>

@@ -5,6 +5,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   align-self: flex-start;
+  width: ${(props) => props.width};
   border: none;
   outline: none;
   border-radius: 10px;
