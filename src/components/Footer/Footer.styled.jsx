@@ -9,17 +9,17 @@ export const FooterWrapper = styled.footer`
 
 export const Wrapper = styled.div`
   margin-bottom: ${(props) => props.theme.space[10]}px;
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     display: flex;
     justify-content: space-between;
   }
 `;
 
 export const Info = styled.div`
-  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (max-width: ${(props) => props.theme.breakpoint.lg}) {
     margin-bottom: ${(props) => props.theme.space[6]}px;
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     width: 250px;
   }
 `;
@@ -75,7 +75,7 @@ export const SocialLink = styled.a`
 `;
 
 export const Explore = styled.div`
-  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (max-width: ${(props) => props.theme.breakpoint.lg}) {
     margin-bottom: ${(props) => props.theme.space[6]}px;
   }
 `;
@@ -106,7 +106,7 @@ export const Link = styled(NavLink)`
 
 export const Sub = styled.div`
   width: 100%;
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     width: 430px;
   }
 `;

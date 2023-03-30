@@ -6,7 +6,7 @@ export const Navbar = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     padding: 0 50px;
   }
 `;
@@ -20,7 +20,7 @@ export const Logo = styled.a`
     width: 24px;
     height: 24px;
     fill: ${(props) => props.theme.colors.accent};
-    @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+    @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
       width: 32px;
       height: 32px;
     }
@@ -33,7 +33,7 @@ export const LogoText = styled.p`
   font-weight: ${(props) => props.theme.fontWeights.bold};
   font-size: ${(props) => props.theme.fontSizes.s};
   line-height: ${(props) => props.theme.lineHeights.heading};
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     font-size: ${(props) => props.theme.fontSizes.m};
   }
 `;

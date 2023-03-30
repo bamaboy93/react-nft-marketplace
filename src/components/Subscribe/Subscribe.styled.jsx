@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.md}) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,23 +24,23 @@ export const Image = styled.img`
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.md}) {
     width: 300px;
     height: 300px;
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     width: 425px;
     height: 310px;
   }
 `;
 
 export const InfoWrapper = styled.div`
-  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.md}) {
     width: 300px;
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     width: 425px;
   }
 `;
@@ -51,11 +51,11 @@ export const Title = styled.h2`
   font-size: ${(props) => props.theme.fontSizes.l};
   line-height: ${(props) => props.theme.lineHeights.body};
 
-  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (max-width: ${(props) => props.theme.breakpoint.md}) {
     margin-top: ${(props) => props.theme.space[3]}px;
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     font-size: ${(props) => props.theme.fontSizes.xl};
   }
 `;
@@ -63,7 +63,7 @@ export const Title = styled.h2`
 export const Info = styled.p`
   margin-bottom: ${(props) => props.theme.space[7]}px;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     font-size: ${(props) => props.theme.fontSizes.m};
   }
 `;

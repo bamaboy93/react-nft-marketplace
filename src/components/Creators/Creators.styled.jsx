@@ -6,7 +6,7 @@ export const Grid = styled.ul`
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 
-  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (max-width: ${(props) => props.theme.breakpoint.sm}) {
     margin-bottom: ${(props) => props.theme.space[8]}px;
   }
 `;

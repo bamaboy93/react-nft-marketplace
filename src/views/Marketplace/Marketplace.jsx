@@ -1,7 +1,13 @@
-import React from "react";
+import MarketplaceHeader from "../../components/MarketplaceHeader";
+import MarketplaceTabs from "../../components/MarketplaceTabs";
 
 const Marketplace = () => {
-  return <div></div>;
+  return (
+    <>
+      <MarketplaceHeader />
+      <MarketplaceTabs />
+    </>
+  );
 };
 
 export default Marketplace;

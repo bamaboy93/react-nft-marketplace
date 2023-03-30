@@ -35,13 +35,13 @@ export const Button = styled.button`
   font-size: ${(props) => props.theme.fontSizes.s};
   transition: transform 250ms ease;
 
-  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (max-width: ${(props) => props.theme.breakpoint.lg}) {
     margin-top: ${(props) => props.theme.space[4]}px;
     width: 100%;
     justify-content: center;
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     position: absolute;
     top: 0;
     right: 0;

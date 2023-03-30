@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     height: 700px;
     background-size: contain;
   }
@@ -30,12 +30,12 @@ export const Wrapper = styled.div`
 export const InfoWrapper = styled.div`
   position: absolute;
   z-index: 999;
-  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (max-width: ${(props) => props.theme.breakpoint.sm}) {
     top: 50%;
     left: 30%;
     transform: translate(-30%, -50%);
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.sm}) {
     width: 560px;
 
     bottom: 10%;
@@ -47,11 +47,11 @@ export const InfoWrapper = styled.div`
     align-items: center;
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.md}) {
     width: 750px;
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     width: 1050px;
   }
 `;
@@ -73,7 +73,7 @@ export const Name = styled.h3`
   font-size: ${(props) => props.theme.fontSizes.xl};
   margin-bottom: ${(props) => props.theme.space[8]}px;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     font-size: ${(props) => props.theme.fontSizes.xxl};
   }
 `;

@@ -4,11 +4,11 @@ import { Typography } from "@mui/material";
 export const CollectionWrapper = styled.div`
   display: grid;
   grid-row-gap: 40px;
-  @media (min-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.sm}) {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.lg}) {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
   }
@@ -31,7 +31,7 @@ export const List = styled.ul`
   margin-top: ${(props) => props.theme.space[2]}px;
   display: flex;
   justify-content: space-between;
-  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (max-width: ${(props) => props.theme.breakpoint.sm}) {
     justify-content: space-evenly;
   }
 `;
@@ -47,7 +47,7 @@ export const Item = styled.li`
   font-weight: ${(props) => props.theme.fontWeights.bold};
   font-size: ${(props) => props.theme.fontSizes.s};
 
-  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (min-width: ${(props) => props.theme.breakpoint.md}) {
     width: 100px;
     height: 100px;
   }
